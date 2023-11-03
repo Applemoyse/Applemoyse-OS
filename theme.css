@@ -1,0 +1,110 @@
+:root {
+    --white: #fffcf5;
+    --dark-brown: #362214;
+    --shadow-dark-board: #482c1d;
+    --shadow-light-board: #866346;
+    --wood-frame: #4e3c2f;
+    --whiteboard: #323428;
+    --chalk: #e3e3db;
+    --menu-background: #fefbed;
+    --menu-border:#deceab;
+    --menu-text: #c2b5a4;
+}
+
+body {
+    background-image: url(assets/images/bakery.jpg);
+    background-size: cover;
+    font-family: 'JetBrains Mono', monospace;
+}
+    a {
+        color: #db7665;
+    }
+    a:hover {
+        background-color: rgba(0,0,0,.2);
+    }
+    .highlight {
+        color: #f0c258;
+    }
+    .highlight-menu {
+        color: #6ea735;
+        font-weight: bold;
+    }
+
+nav {
+    background: #4e3c2f;
+    border: 4px solid var(--white) var(--shadow-dark-board) var(--shadow-dark-board) var(--dark-brown);
+    color: #141111;
+}
+    #launch {
+        background-color: #fdfaf1;
+        border: 2px solid var(--shadow-light-board) var(--shadow-dark-board) var(--shadow-dark-board) var(--dark-brown);
+        color: #c3472c;
+    }
+    #status {
+        background-color: #ecdfc5;
+        border: 2px solid var(--dark-brown) var(--shadow-dark-board) var(--shadow-dark-board) var(--shadow-light-board);
+        color: #57483d;
+    }
+
+.modal {
+    background: var(--wood-frame);
+    border: 4px solid var(--shadow-light-board) var(--shadow-dark-board) var(--shadow-dark-board) var(--dark-brown);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    text-align: left;
+}
+    .appmOS {
+        color: var(--chalk);
+        background-color: var(--whiteboard);
+        border: 2px solid var(--dark-brown) var(--shadow-dark-board) var(--shadow-dark-board) var(--shadow-light-board);
+    }
+    #projects-modal {
+        height: fit-content;
+        background-color: #e2d4b9;
+        border-bottom: 7px solid #5a4638;
+        color: #574f48;
+    }
+    #magic-ball > p, input {
+        background-color: var(--white);
+    }
+        input:focus {
+            border: 3px solid var(--shadow-light-board);
+            outline: none;
+        }
+        #btn-magic {
+            background-color: transparent;
+            box-shadow: inset 1.5px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+            color: var(--chalk);
+            text-shadow: 1px 1px 1px var(--dark-brown);
+        }
+        #btn-magic:hover {
+            background-color: #b78ba5;
+            color: #2e2e38;
+          }
+          
+          #btn-magic:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+              inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+          }
+        #answer {
+            background-color: var(--white);
+            color: var(--wood-frame);
+        }
+
+#desktop-items {
+    background-color: var(--menu-background);
+    border: 4px double var(--menu-border);
+}
+    .icon > a {
+        color: var(--menu-text);
+        text-decoration: none;
+    }
+
+/********** Animations **********/
+
+@keyframes glowtext {
+    from {text-shadow: 1px 2px 4px #66656d;}
+    to {text-shadow: 1px 2px 4px #a9402d;}
+}
