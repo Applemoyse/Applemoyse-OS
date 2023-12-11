@@ -111,7 +111,7 @@ nav {
         right: 10px;
         width: 40px;
         height: 40px;
-        background: url("assets/images/close-button.png") no-repeat 0 0;
+        background: url("assets/images/close-button.webp") no-repeat 0 0;
         text-indent: -9999px;
         display: block;        
     }
