@@ -70,6 +70,9 @@ a {
     }
     #status-luna > p {
         margin: 0 0 1rem 0;
+        color: var(--dark-brown);
+        font-size: 0.8rem;
+        text-align: center;
     }
     .blinker {
         animation: blinker 0.9s steps(2, start) infinite;
@@ -244,6 +247,10 @@ footer {
     #status-luna {
         width: 250px;
     }
+        #status-luna > p {
+            font-size: 0.7rem;
+        }
+
     #list-commands {
         position: relative;
         width: 100%;
