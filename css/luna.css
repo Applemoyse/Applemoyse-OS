@@ -197,8 +197,8 @@ footer {
 
 @media (min-width: 768px) {
     #green-web {
-        top: 20%;
         left: 50px;
+        bottom: 1%;
     }
     p {
         font-size: 1.125rem;
@@ -268,7 +268,7 @@ footer {
         z-index: 2;
     }
     #green-web {
-        top: 0;
+        position: relative;
     }
     footer {
         padding: 0;
