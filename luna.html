@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The status site for the Discord cat bot - LUNA. Basically her homebase." />
+    <meta name="keywords" content="Applemoyse, LUNA, Discord bot, Discord cat bot, Javascript bot, Cute digital cat">
+    <meta name="author" content="Applemoyse Web Developer">
+    <link rel="icon" type="image/x-icon" href="../assets/images/apple.png">
+    <title>ApplemoyseOS</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="css/luna.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="applemoyseOS">
+      <header>
+          <nav>
+              <button id="launch" class="modal-trigger" data-modal-id="about">ApplemoyseOS</button>
+              <div id="status" class="bold">
+              </div>
+          </nav>
+      </header>
+      <main>
+        <div class="modal-container" id="about">
+          <div class="modal">
+            <div class="appmOS scroll">
+              <h2>Welcome to ApplemoyseOS 2.7!</h2>
+              <br>
+              <p>ApplemoyseOS is a dedicated platform to showcasing the projects of the developer known as "<span class="highlight"><a href="https://applemoyse.dev">Applemoyse</a></span>" and her cat companion <span class="highlight"><a href="https://applemoyse.dev/luna">LUNA</a></span>. 
+                <br><br>
+                Remember to run this "operating system" on safe hardware.
+                <br><br>
+                This version of <span class="bold"><a href="https://applemoyse.dev">APPLEMOYSE</a></span> is up to date as of 2023.
+                <br>
+                Current number of views: <span>
+                  <!-- Start of CuterCounter Code -->
+                  <a target="_blank"><img id="counter" src="https://www.cutercounter.com/hits.php?id=huxofaof&nd=6&style=80" border="0" alt="visitor counter"></a>
+                  <!-- End of CuterCounter Code -->
+                </span>
+                <br>
+                <a class="glowtext modal-trigger" data-modal-id="credits">[ CREDITS ]</a>
+              </p>
+              <button class="modal-close">Close</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-container" id="credits">
+          <div class="modal">
+            <!-- Modal Content 2 -->
+            <div class="appmOS scroll">
+              <h2>Credits</h2>
+              <br>
+              <ul>
+                  <li>Feline companion and trusted partner, the one and only, <a href="https://luna-catbot.netlify.app/" target="_blank">LUNA</a>. </li>
+                  <li>jQuery library by <a href="https://openjsf.org/" target="_blank">OpenJS Foundation</a>.</li>
+                  <li>Typeface by <a href="https://fonts.google.com/?query=JetBrains" target="_blank">JetBrains</a></li>
+                  <li>Web Counter by <a href="https://www.cutercounter.com/"> Cuter Counter</a></li>
+                  <li>Background by <a href="https://www.pixiv.net/en/users/2055142"target="_blank">ここ</a></li>
+              </ul>
+              <button class="modal-close">Close</button>
+            </div>
+          </div>
+        </div>
+        <img id="luna-img" src="assets/images/luna-bot.png" alt="Image of Luna, the Discord cat bot.">
+        <h1 class="heading">LUNA</h1>
+        <h2 class="heading">Take in your own fluffy, meowing <span class="basic">Discord</span> companion!</h2>
+        <div class="terminal-container">
+          <div id="status-luna"><div id="status-luna-light"></div>
+          <iframe width="300px" height="50px" src="https://wellgroomedgracefulcat.imariacristina.repl.co" title="LUNA Bot Home"></iframe><span class="blinker"></span></div>
+          <div id="CTAs">
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1096381036679659530&permissions=9228811889730&scope=bot" target="_blank">Invite <span class="highlight">LUNA</span></a>
+            <div class="details">Invite <span class="highlight-luna">LUNA</span> to your cozy Discord home as <span class="italic">your very own feline bot</span>.</div>
+            <a href="https://discord.gg/2QA2BW2CbR" target="_blank">Join her Discord</a>
+            <div class="details">Come join the <span class="highlight pink">#codingf00d</span> server, where <span class="highlight-luna">LUNA</span> roams and we share updates about her adventures. The server is also a purrfect spot for tech foodies to hang out and have a good time together! <span class="pink">&#10084;</span></div>
+            <a href="https://ko-fi.com/applemoyse" target="_blank">Fuel <span class="highlight">LUNA</span></a>
+            <div class="details">If you're a fan of <span class="highlight pink">this cute kitty</span>, please consider treating her creator to a coffee! ☕ </br>The extra love and energy will help her continue to grow and improve! 🐾</div>
+          </div>
+          </div>
+        <div id="list-commands">
+          <table>
+            <thead>
+              <h3>List of paw-some commands:</h3>
+            <hr>
+            </thead>
+            <tbody>
+              <tr><th colspan="2">SERVE</th></tr>
+              <tr class="favorite">
+                <th class="command-name">/cat-gif</th>
+                <th class="command-description">Serves you with a random cat GIF. Main dish for now.</th>
+              </tr>
+              <tr class="favorite">
+                <th class="command-name">/cat-fact</th>
+                <th class="command-description">Gives a purrfectly random cat fact just for you.</th>
+              </tr>
+              <tr>
+                <th class="command-name">/coffee</th>
+                <th class="command-description">Serves you a purrfectly brewed cup of coffee. </th>
+              </tr>
+              <tr><th colspan="2">MODERATION</th></tr>
+              <tr>
+                <th class="command-name">/kick</th>
+                <th class="command-description">Kicks a selected member. (Administrator ONLY command!)</th>
+              </tr>
+              <th class="command-name">/prune</th>
+              <th class="command-description">Lets you delete messages (pinned messages excluded), only up to 99 at a time & newer than two weeks! (Administrator ONLY command!)</th>
+            </tr>
+              <tr><th colspan="2">FUN</th></tr>
+              <tr>
+                <th class="command-name">/pat</th>
+                <th class="command-description">Pats a selected member with a heart.</th>
+              </tr>
+              <tr>
+                <th class="command-name">/ping</th>
+                <th class="command-description">Pounces with joy and serves you a paw-some Pong! <i class="fa fa-eye-slash" aria-hidden="true"></i></th>
+              </tr>
+              <tr><th colspan="2">UTILITY</th></tr>
+              <tr>
+                <th class="command-name">/menu</th>
+                <th class="command-description">View LUNA's list of commands. <i class="fa fa-eye-slash" aria-hidden="true"></i></th>
+              </tr>
+              <tr>
+                <th class="command-name">/info</th>
+                <th class="command-description">Purrrr-sonally delivers details about the user or server.<i class="fa fa-eye-slash" aria-hidden="true"></i></th>
+              </tr>
+              <tr>
+                <th class="command-name">/credits</th>
+                <th class="command-description">See the wonderful people who make LUNA purr and keep her paws moving forward! <i class="fa fa-eye-slash" aria-hidden="true"></i></th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>&copy;<span id="year">2023</span> <a href="https://applemoyse.dev" rel="author">Applemoyse</a> [MCI]</p>
+    </footer>
+</body>
+</html>
